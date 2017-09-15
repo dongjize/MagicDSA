@@ -9,7 +9,7 @@ import linkedList.ListNode;
  * @Date: 2017-08-19
  * @Time: 19:04
  */
-public class ListStack implements Stack {
+public class ListStack<E> implements Stack<E> {
 
     protected ListNode top;
     protected int size;
@@ -30,11 +30,11 @@ public class ListStack implements Stack {
     }
 
     @Override
-    public Object top() throws RuntimeException {
+    public E top() throws RuntimeException {
         if (isEmpty()) {
             throw new RuntimeException("empty stack");
         }
-        return top.getElem();
+        return (E) top.getElem();
     }
 
     @Override
@@ -44,13 +44,13 @@ public class ListStack implements Stack {
     }
 
     @Override
-    public Object pop() throws RuntimeException {
+    public E pop() throws RuntimeException {
         if (isEmpty()) {
             throw new RuntimeException("empty stack");
         }
         Object temp = top.getElem();
         top = top.getNext(); //refresh the top node reference
         size--;
-        return temp;
+        return (E) temp;
     }
 }

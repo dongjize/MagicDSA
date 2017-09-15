@@ -3,27 +3,17 @@ package stack;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
-
-import java.util.ArrayList;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
-@RunWith(MockitoJUnitRunner.class)
 public class ListStackTest {
-    private Stack stack;
-//    @Mock
-//    ArrayList mockedList;
+
+    private Stack<Object> stack;
 
     @Before
     public void setUp() throws Exception {
-        stack = new ListStack();
+        stack = new ListStack<>();
     }
 
     @After

@@ -33,6 +33,8 @@ public class HeapPQueue<K, V> implements PQueue<K, V> {
     /**
      * 根据某一序列直接批量式构造堆算法，s中元素都是形如(key, value)的条目
      *
+     * 只需 O(n)时间，即可将 n 个条目组织为一个二叉堆结构。
+     *
      * @param c
      * @param s
      */

@@ -1,17 +1,16 @@
 package priorityQueue;
 
+import org.junit.Assert;
+import org.junit.Test;
 import sequence.DLNodeSequence;
 import sequence.Sequence;
 
-/*
- * Description: 
- *
- * @Author: dong
- * @Date: 2017-09-07
- * @Time: 13:18
- */
-public class HeapSortTest {
-    public static void main(String[] arg) {
+import static org.junit.Assert.*;
+
+public class PQueueSorterTest {
+    @Test
+    public void testHeapSort() {
+
         PQueueSorter sorter = new PQueueSorter();
         Sequence sequence = new DLNodeSequence();
         sequence.insertLast(65);
@@ -26,5 +25,7 @@ public class HeapSortTest {
         sequence.insertLast(88);
         sorter.sort(sequence);
 
+
     }
+
 }

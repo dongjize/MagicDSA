@@ -46,7 +46,7 @@ public class BSTree<E> extends LinkedListBinTree<E> implements Dictionary {
      * 若词典中存在以key为关键码的条目，则返回其中的一个条目；否则，返回null
      *
      * @param key
-     * @return
+     * @return 如果二分查找出正确结果，则返回u；否则返回null
      */
     @Override
     public Entry find(Object key) {
@@ -128,12 +128,12 @@ public class BSTree<E> extends LinkedListBinTree<E> implements Dictionary {
             return null;
         }
         BinTreePosition v = binSearch((BSTreeNode) root, key, comparator);
-        //若查找失败，则返回null
+        //If search fails, return null
         if (comparator.compare(key, ((BSTreeNode) v).getKey()) != 0) {
             return null;
         }
 
-        // 若查找成功，v为待删除节点：
+        // If search succeeds，and v is the node to delete:
         if (v.hasLChild()) { //若v的左子树非空，在v的左子树中找出其直接前驱w
             BinTreePosition w = v.getPrev();
             //交换v和w的数据对象
@@ -175,7 +175,7 @@ public class BSTree<E> extends LinkedListBinTree<E> implements Dictionary {
     }
 
     /**
-     * 在以v为根的子树中查找关键码为key的节点（假设该子树不为空）
+     * 在以v为根的子树中查找关键码为key的节点（假设该子树不为空）；
      * 为了确定是否成功，上层方法需要再检查一次返回节点的关键码
      * <p>
      * 由 n 个互异条目随机生成的 BST，平均查找长度为 O(logn)。

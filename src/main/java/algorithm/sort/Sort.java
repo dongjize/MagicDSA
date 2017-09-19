@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /*
  * Description: A set of sorting algorithms
+ * - CountingSort
  * - BubbleSort
  * - SelectionSort
  * - InsertionSort
@@ -16,6 +17,59 @@ import java.util.Arrays;
  * @Time: 20:57
  */
 public class Sort {
+
+    /**
+     * 计数排序 ComparisonCountingSort
+     * Time Efficiency: n(n-1)/2
+     *
+     * @param arr
+     * @return
+     */
+    public static int[] comparisonCountingSort(int arr[]) {
+        int n = arr.length;
+        int[] counts = new int[n];
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (arr[i] < arr[j]) {
+                    counts[j]++;
+                } else {
+                    counts[i]++;
+                }
+            }
+        }
+        int[] s = new int[n];
+        for (int i = 0; i < n; i++) {
+            s[counts[i]] = arr[i];
+        }
+        return s;
+    }
+
+
+    /**
+     * 分布计数排序 DistributionCountingSort
+     * @param arr
+     * @param low
+     * @param high
+     * @return
+     */
+    public static int[] distributionCountingSort(int[] arr, int low, int high) {
+        int n = arr.length;
+        int[] s = new int[arr.length];
+        int[] d = new int[high - low];
+        for (int i = 0; i < n; i++) {
+            d[arr[i] - low] = d[arr[i] - low] + 1;
+        }
+        for (int j = 1; j < high - low; j++) {
+            d[j] = d[j - 1] + d[j];
+        }
+        for (int i = n - 1; i >= 0; i--) {
+            int j = arr[i] - low;
+            s[d[j] - 1] = arr[i];
+            d[j]--;
+        }
+        return s;
+    }
+
 
     /**
      * 冒泡排序 BubbleSort

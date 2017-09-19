@@ -6,7 +6,7 @@ import priorityQueue.Entry;
 import tree.binTree.BinTreePosition;
 
 /*
- * Description: 
+ * Description: AVL Tree
  *
  * @Author: dong
  * @Date: 2017-09-14
@@ -28,6 +28,8 @@ public class AVLTree<E> extends BSTree<E> implements Dictionary {
 
     /**
      * 插入条目(key, value)，并返回该条目
+     * <p>
+     * AVL 树的节点插入操作可以在 O(logn)时间内完成。
      *
      * @param key
      * @param value
@@ -90,6 +92,10 @@ public class AVLTree<E> extends BSTree<E> implements Dictionary {
 
     /**
      * 通过旋转，使节点z的平衡因子的绝对值不超过1（支持AVL树）
+     * <p>
+     * 两次单旋分别只需O(logn)时间。因此，整个双旋调整过程只需O(logn)时间
+     * <p>
+     * 在 AVL 树中插入一个节点后，至多只需经过两次旋转即可使之恢复平衡
      *
      * @param z
      * @return 返回新的子树根
@@ -100,41 +106,41 @@ public class AVLTree<E> extends BSTree<E> implements Dictionary {
         boolean cType = z.isLChild();
         BinTreePosition<E> p = z.getParent(); //p为z的父亲
         BinTreePosition<E> a, b, c; //自左向右，三个节点
-        BinTreePosition<E> t0, t1, t2, t3; //自左向右，四棵子树
+        BinTreePosition<E> tree0, tree1, tree2, tree3; //自左向右，四棵子树
 
         /******** 以下分四种情况 ********/
 
         if (y.isLChild()) { //若y是左孩子，则
             c = z;
-            t3 = z.getRChild();
+            tree3 = z.getRChild();
             if (x.isLChild()) { //若x是左孩子
                 b = y;
-                t2 = y.getRChild();
+                tree2 = y.getRChild();
                 a = x;
-                t1 = x.getRChild();
-                t0 = x.getLChild();
+                tree1 = x.getRChild();
+                tree0 = x.getLChild();
             } else {//若x是右孩子
                 a = y;
-                t0 = y.getLChild();
+                tree0 = y.getLChild();
                 b = x;
-                t1 = x.getLChild();
-                t2 = x.getRChild();
+                tree1 = x.getLChild();
+                tree2 = x.getRChild();
             }
         } else { //若y是右孩子，则
             a = z;
-            t0 = z.getLChild();
+            tree0 = z.getLChild();
             if (x.isRChild()) { //若x是右孩子
                 b = y;
-                t1 = y.getLChild();
+                tree1 = y.getLChild();
                 c = x;
-                t2 = x.getLChild();
-                t3 = x.getRChild();
+                tree2 = x.getLChild();
+                tree3 = x.getRChild();
             } else { //若x是左孩子
                 c = y;
-                t3 = y.getRChild();
+                tree3 = y.getRChild();
                 b = x;
-                t1 = x.getLChild();
-                t2 = x.getRChild();
+                tree1 = x.getLChild();
+                tree2 = x.getRChild();
             }
         }
         //摘下三个节点
@@ -142,24 +148,24 @@ public class AVLTree<E> extends BSTree<E> implements Dictionary {
         y.secede();
         x.secede();
         //摘下四棵子树
-        if (null != t0) {
-            t0.secede();
+        if (null != tree0) {
+            tree0.secede();
         }
-        if (null != t1) {
-            t1.secede();
+        if (null != tree1) {
+            tree1.secede();
         }
-        if (null != t2) {
-            t2.secede();
+        if (null != tree2) {
+            tree2.secede();
         }
-        if (null != t3) {
-            t3.secede();
+        if (null != tree3) {
+            tree3.secede();
         }
         //重新链接
-        a.attachL(t0);
-        a.attachR(t1);
+        a.attachL(tree0);
+        a.attachR(tree1);
         b.attachL(a);
-        c.attachL(t2);
-        c.attachR(t3);
+        c.attachL(tree2);
+        c.attachR(tree3);
         b.attachR(c);
         //子树重新接入原树
         if (null != p)

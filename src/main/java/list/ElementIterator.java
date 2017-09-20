@@ -11,7 +11,7 @@ import base.Position;
  * @Time: 16:53
  */
 public class ElementIterator<E> implements Iterator<E> {
-    private List list;
+    private List<E> list;
     private Position nextPosition;
 
     public ElementIterator() {
@@ -19,7 +19,7 @@ public class ElementIterator<E> implements Iterator<E> {
     }
 
     //构造方法
-    public ElementIterator(List L) {
+    public ElementIterator(List<E> L) {
         list = L;
         if (list.isEmpty()) {
             nextPosition = null;

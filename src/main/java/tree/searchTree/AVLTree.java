@@ -35,6 +35,7 @@ public class AVLTree<E> extends BSTree<E> implements Dictionary {
      * @param value
      * @return
      */
+    @Override
     public Entry insert(Object key, Object value) {
         Entry e = super.insert(key, value);
         root = rebalance(lastV.getParent(), root);
@@ -47,6 +48,7 @@ public class AVLTree<E> extends BSTree<E> implements Dictionary {
      * @param key
      * @return
      */
+    @Override
     public Entry remove(Object key) {
         Entry e = super.remove(key);
         if (e != null) {

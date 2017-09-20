@@ -20,6 +20,17 @@ public class ListStackTest {
     public void tearDown() throws Exception {
     }
 
+
+    @Test
+    public void testInt() {
+        long l = 100001000010000L;
+        System.out.println(Long.toBinaryString(l));
+        System.out.print(Long.toBinaryString(l >> 32) + ": ");
+        System.out.println(l >> 32);
+        System.out.print(Integer.toBinaryString((int) l) + ": ");
+        System.out.println((int) l);
+    }
+
     @Test
     public void getSize() throws Exception {
         assertNotNull(stack);

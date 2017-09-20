@@ -13,21 +13,21 @@ import priorityQueue.Entry;
  * @Date: 2017-09-08
  * @Time: 00:25
  */
-public class HashTable<K, V> implements Map<K, V> {
+public class HashTableMap<K, V> implements Map<K, V> {
     private Map[] bucketArray; //桶数组，每个桶本身也是一个（基于列表实现的）映射结构
-    private int N;
+    private int N; //散列表长
     private final double maxLambda = 0.75; //装填因子上限
     private int size; //映射结构的规模
-    private EqualityTester tester;
+    private EqualityTester tester; //判等器
 
-    public HashTable() {
+    public HashTableMap() {
         this(0, new DefaultEqualityTester());
     }
 
-    public HashTable(int n, EqualityTester tester) {
+    public HashTableMap(int n, EqualityTester tester) {
         this.tester = tester;
-        N = getPrimeNumber(n);
-        bucketArray = new Map[N];
+        this.N = getPrimeNumber(n);
+        this.bucketArray = new Map[N];
         for (int i = 0; i < N; i++) {
             bucketArray[i] = new ListMap(tester);
             size = 0;
@@ -77,6 +77,7 @@ public class HashTable<K, V> implements Map<K, V> {
         return oldValue;
     }
 
+
     /**
      * 返回map中所有条目
      * 将各桶对应的映射结构的迭代器串接起来，构成整体的迭代器
@@ -111,11 +112,12 @@ public class HashTable<K, V> implements Map<K, V> {
      */
     private void rehash() {
         Iterator it = this.iterator();
-        N = getPrimeNumber(N << 1);
+        N = getPrimeNumber(N << 1); //桶数组容量至少加倍
         bucketArray = new Map[N];
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) { //为每个桶分配一个子映射
             bucketArray[i] = new ListMap(tester);
         }
+        //将其对应的映射结构中的各条目逐一取出，将其关键码和数据对象整合为新的条目，插入对应的子映射中
         while (it.hasNext()) {
             Entry<K, V> e = (Entry<K, V>) it.getNext();
             K k = e.getKey();

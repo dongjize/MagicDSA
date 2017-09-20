@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b7f6068-c5f2-4e66-be17-5bbba8c0829f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithm/string/StringMatching.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/algorithm/string/StringMatchingTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/algorithm/string/StringMatching.java" afterPath="$PROJECT_DIR$/src/main/java/algorithm/string/StringMatching.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/algorithm/string/StringMatchingTest.java" afterPath="$PROJECT_DIR$/src/test/java/algorithm/string/StringMatchingTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -27,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/map/HashTableDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
-              <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+              <caret line="68" column="7" lean-forward="false" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#560#561#0" expanded="true" />
@@ -47,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringMatchingTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StringMatchingTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/algorithm/string/StringMatchingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="272">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,14 +58,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringMatching.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StringMatching.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/string/StringMatching.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="893">
+              <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -487,8 +484,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-35" />
-    <option name="y" value="23" />
+    <option name="x" value="97" />
+    <option name="y" value="25" />
     <option name="width" value="1280" />
     <option name="height" value="741" />
   </component>
@@ -534,23 +531,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MagicDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MagicDSA" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MagicDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MagicDSA" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MagicDSA" type="b2602c69:ProjectViewProjectNode" />
@@ -602,7 +582,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringMatchingTest.testHorspoolMatching">
+  <component name="RunManager" selected="JUnit.StringMatchingTest.testKMP">
     <configuration name="ListStackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -653,31 +633,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ListStackTest.isEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="MagicDSA_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="stack" />
-      <option name="MAIN_CLASS_NAME" value="stack.ListStackTest" />
-      <option name="METHOD_NAME" value="isEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="ListStackTest.testInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -716,6 +671,31 @@
       <option name="PACKAGE_NAME" value="algorithm.string" />
       <option name="MAIN_CLASS_NAME" value="algorithm.string.StringMatchingTest" />
       <option name="METHOD_NAME" value="testHorspoolMatching" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="StringMatchingTest.testKMP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="algorithm.string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MagicDSA_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="algorithm.string" />
+      <option name="MAIN_CLASS_NAME" value="algorithm.string.StringMatchingTest" />
+      <option name="METHOD_NAME" value="testKMP" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -812,22 +792,25 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ListStackTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ListStackTest.getSize" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ListStackTest.isEmpty" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ListStackTest.testInt" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StringMatchingTest.testHorspoolMatching" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ListStackTest.testInt" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StringMatchingTest.testHorspoolMatching" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StringMatchingTest.testKMP" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StringMatchingTest.testHorspoolMatching" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ListStackTest.testInt" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ListStackTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ListStackTest.getSize" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ListStackTest.isEmpty" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StringMatchingTest.testKMP" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StringMatchingTest.testHorspoolMatching" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ListStackTest.testInt" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ListStackTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ListStackTest.getSize" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -845,17 +828,11 @@
       <workItem from="1505797225596" duration="8951000" />
       <workItem from="1505829108002" duration="64000" />
       <workItem from="1505829756109" duration="620000" />
-      <workItem from="1505881127269" duration="12588000" />
+      <workItem from="1505881127269" duration="17188000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ListStackTest - 2017.09.15 at 19h 37m 34s.xml">
-      <configuration name="ListStackTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ListStackTest - 2017.09.15 at 19h 39m 36s.xml">
-      <configuration name="ListStackTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ListStackTest - 2017.09.15 at 19h 42m 52s.xml">
       <configuration name="ListStackTest" configurationId="JUnit" />
     </history-entry>
@@ -880,12 +857,18 @@
     <history-entry file="StringMatchingTest_testHorspoolMatching - 2017.09.20 at 22h 09m 29s.xml">
       <configuration name="StringMatchingTest.testHorspoolMatching" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringMatchingTest_testHorspoolMatching - 2017.09.20 at 22h 16m 59s.xml">
+      <configuration name="StringMatchingTest.testHorspoolMatching" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringMatchingTest_testKMP - 2017.09.20 at 23h 44m 33s.xml">
+      <configuration name="StringMatchingTest.testKMP" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45373000" />
+    <option name="totallyTimeSpent" value="49973000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-35" y="23" width="1280" height="741" extended-state="0" />
+    <frame x="97" y="25" width="1280" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -927,15 +910,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/algorithm/string/StringMatching.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1289,7 +1264,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/map/HashTableDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+          <caret line="68" column="7" lean-forward="false" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#560#561#0" expanded="true" />
@@ -1308,20 +1283,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/algorithm/string/StringMatchingTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/string/StringMatching.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="893">
+          <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/string/StringMatching.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/algorithm/string/StringMatchingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -13,4 +13,10 @@ public class StringMatchingTest {
         System.out.println(result);
     }
 
+    @Test
+    public void testKMP() {
+        int result = StringMatching.KMP("EXAM", "STRINGSEARCHEXAMPLE");
+        System.out.println(result);
+    }
+
 }

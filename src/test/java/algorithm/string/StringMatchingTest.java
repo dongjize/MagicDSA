@@ -1,9 +1,6 @@
 package algorithm.string;
 
-import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class StringMatchingTest {
 
@@ -15,13 +12,13 @@ public class StringMatchingTest {
 
     @Test
     public void testKMP() {
-        int result = StringMatching.KMP("CHINCHILLA", "SEARCHCHINCHIMSTRINGSEARCHCHINCHILLASTRINGSEARCH");
+        int result = StringMatching.KMP("SEARCHCHINCHIMSTRINGSEARCHCHINCHILLASTRINGSEARCH", "CHINCHILLA");
         System.out.println(result);
     }
 
     @Test
     public void testBM() {
-        int result = StringMatching.KMP("CHINCHILLA", "SEARCHCHINCHIMSTRINGSEARCHCHINCHILLASTRINGSEARCH");
+        int result = StringMatching.BM("SEARCHCHINCHIMSTRINGSEARCHCHINCHILLASTRINGSEARCH", "CHINCHILLA");
         System.out.println(result);
     }
 

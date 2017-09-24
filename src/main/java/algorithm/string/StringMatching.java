@@ -56,7 +56,7 @@ public class StringMatching {
      *
      * @return
      */
-    public static int KMP(String p, String t) {
+    public static int KMP(String t, String p) {
         int[] next = buildNext(p);
         int i = 0; // t指针
         int j = 0; // p指针
@@ -278,34 +278,34 @@ public class StringMatching {
 
     protected static int[] computeSuffixSize(String P) {
         int m = P.length();
-        int[] SS = new int[m];//Suffix Size Table
+        int[] ss = new int[m];//Suffix Size Table
         int s, t;//子串P[s+1, ..., t]与后缀P[m+s-t, ..., m-1]匹配
         int j;//当前字符的位置
 
         // 对最后一个字符而言，与之匹配的最长后缀就是整个P串，故...
-        SS[m - 1] = m;
+        ss[m - 1] = m;
 
         // 从倒数第二个字符起，自右向左扫描P，依次计算出SS[]其余各项
         s = m - 1;
         t = m - 2;
         for (j = m - 2; j >= 0; j--) {
-            if ((j > s) && (j - s > SS[(m - 1 - t) + j])) {
-                SS[j] = SS[(m - 1 - t) + j];
+            if ((j > s) && (j - s > ss[(m - 1 - t) + j])) {
+                ss[j] = ss[(m - 1 - t) + j];
             } else {
                 t = j; //与后缀匹配之子串的终点，就是当前字符
                 s = Math.min(s, j); //与后缀匹配之子串的起点
                 while ((0 <= s) && (P.charAt(s) == P.charAt((m - 1 - t) + s))) {
                     s--; //似乎是二重循环，难道复杂度是平方量级？
                 }
-                SS[j] = t - s;//与后缀匹配之最长子串的长度
+                ss[j] = t - s;//与后缀匹配之最长子串的长度
             }
         }
         System.out.println("-- SS[] Table -------");
         for (j = 0; j < m; j++) System.out.print("\t" + P.charAt(j));
         System.out.println();
-        for (j = 0; j < m; j++) System.out.print("\t" + SS[j]);
+        for (j = 0; j < m; j++) System.out.print("\t" + ss[j]);
         System.out.println("\n");
-        return (SS);
+        return (ss);
     }
 
 

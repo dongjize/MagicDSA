@@ -177,7 +177,9 @@ public class StringMatching {
 
     // ---------------------------------------- BM ------------------------------------------
 
-    //字符集规模
+    /**
+     * 字符集规模
+     */
     private final static int CARD_CHAR_SET = 256;
 
     /**
@@ -276,8 +278,8 @@ public class StringMatching {
     }
 
 
-    protected static int[] computeSuffixSize(String P) {
-        int m = P.length();
+    protected static int[] computeSuffixSize(String p) {
+        int m = p.length();
         int[] ss = new int[m];//Suffix Size Table
         int s, t;//子串P[s+1, ..., t]与后缀P[m+s-t, ..., m-1]匹配
         int j;//当前字符的位置
@@ -294,14 +296,14 @@ public class StringMatching {
             } else {
                 t = j; //与后缀匹配之子串的终点，就是当前字符
                 s = Math.min(s, j); //与后缀匹配之子串的起点
-                while ((0 <= s) && (P.charAt(s) == P.charAt((m - 1 - t) + s))) {
+                while ((0 <= s) && (p.charAt(s) == p.charAt((m - 1 - t) + s))) {
                     s--; //似乎是二重循环，难道复杂度是平方量级？
                 }
                 ss[j] = t - s;//与后缀匹配之最长子串的长度
             }
         }
         System.out.println("-- SS[] Table -------");
-        for (j = 0; j < m; j++) System.out.print("\t" + P.charAt(j));
+        for (j = 0; j < m; j++) System.out.print("\t" + p.charAt(j));
         System.out.println();
         for (j = 0; j < m; j++) System.out.print("\t" + ss[j]);
         System.out.println("\n");

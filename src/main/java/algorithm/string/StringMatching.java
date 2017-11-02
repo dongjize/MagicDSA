@@ -22,17 +22,15 @@ public class StringMatching {
     public static int bruteForcePatternMatching(String p, String t) {
         int i, j;
         for (i = 0; i < t.length() - p.length(); i++) {
-            for (j = 0; j < p.length(); j++) {
-                if (t.charAt(i + j) != p.charAt(j)) {
-                    break;
-                }
-
+            j = 0;
+            while (j < p.length() && t.charAt(i + j) == p.charAt(j)) {
+                j++;
             }
             if (j >= p.length()) {
-                break;
+                return i;
             }
         }
-        return i;
+        return -1;
 
     }
 

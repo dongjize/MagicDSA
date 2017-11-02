@@ -23,7 +23,7 @@ public class BestFSPrim extends BestFS {
             Edge e = (Edge) it.getNext();
             Vertex w = (Vertex) e.getVPosInV(1).getElem();
             int weight = e.getWeight();
-            if (w.getDistance() > weight) {
+            if (weight < w.getDistance()) {
                 w.setDistance(weight);
                 w.setBFSParent(v);
             }

@@ -323,9 +323,8 @@ public class StringMatching {
     public static int HorspoolMatching(String p, String t) {
         HashMap<Character, Integer> table = shiftTable(p);
         int i = p.length() - 1;
-        while (i <= table.size() - 1) {
+        while (i < table.size()) {
             int k = 0;
-
             while (k < p.length() && p.charAt(p.length() - 1 - k) == t.charAt(i - k)) {
                 k++;
             }
@@ -338,12 +337,20 @@ public class StringMatching {
         return -1;
     }
 
-    private static HashMap shiftTable(String pattern) {
+    /**
+     * Build the shift table of the alphabet
+     *
+     * @param pattern
+     * @return
+     */
+    private static HashMap<Character, Integer> shiftTable(String pattern) {
         HashMap<Character, Integer> shift = new HashMap<>();
         for (char i = 'A'; i <= 'Z'; i++) {
             shift.put(i, pattern.length());
         }
+        // Scan the pattern to update shift table.
         for (int j = 0; j < pattern.length() - 1; j++) {
+            // The value is the distance from the last existed position to the tail.
             shift.put(pattern.charAt(j), pattern.length() - (j + 1));
         }
         return shift;

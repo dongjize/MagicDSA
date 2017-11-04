@@ -17,4 +17,11 @@ public class SortTest {
         Assert.assertArrayEquals(new int[]{11, 12, 12, 12, 13, 13}, Sort.distributionCountingSort(arr, 11, 13));
     }
 
+    @Test
+    public void testQuickSort() {
+        int[] arr = {33, 13, 14, 94, 82, 25};
+        Sort.quickSort(arr, 0, 5);
+        Assert.assertArrayEquals(new int[]{13, 14, 25, 33, 82, 94}, arr);
+    }
+
 }

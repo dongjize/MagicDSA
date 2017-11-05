@@ -17,9 +17,10 @@ public class SearchTest {
 
     @Test
     public void quickSelectTest() {
-        int[] arr = {39, 23, 12, 77, 48, 61, 55};
-        int result = Search.quickSelect(arr, 0, arr.length - 1, 4);
-        System.out.println(result);
+        int[] arr = {4, 1, 10, 8, 7, 12, 9, 2, 15};
+        Assert.assertEquals(Search.quickSelect(arr, 0, arr.length - 1, 5), 8);
+        int[] arr1 = {4, 1, 10, 8, 7, 12, 9, 2, 15};
+        Assert.assertEquals(Search.quickSelect(arr1, 0, arr1.length - 1, 4), 7);
     }
 
 }

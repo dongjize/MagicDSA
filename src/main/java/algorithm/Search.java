@@ -1,4 +1,4 @@
-package algorithm.search;
+package algorithm;
 
 /*
  * Description: A set of searching algorithms

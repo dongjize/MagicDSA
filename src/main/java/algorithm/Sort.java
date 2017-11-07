@@ -1,4 +1,4 @@
-package algorithm.sort;
+package algorithm;
 
 import java.util.Arrays;
 
@@ -142,6 +142,12 @@ public class Sort {
         }
         arr[left] = pivot;
         return left;
+    }
+
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
 

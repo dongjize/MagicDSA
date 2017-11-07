@@ -1,5 +1,6 @@
 package algorithm.string;
 
+import algorithm.StringMatching;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,5 +1,6 @@
 package algorithm.sort;
 
+import algorithm.Sort;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -20,8 +21,10 @@ public class SortTest {
     @Test
     public void testQuickSort() {
         int[] arr = {33, 13, 14, 94, 82, 25};
-        Sort.quickSort(arr, 0, 5);
+//        int[] arr = {1, 4, 7, 1, 5, 5, 3, 85, 34, 75, 23, 75, 2, 0};
+        Sort.quickSort(arr, 0, arr.length - 1);
         Assert.assertArrayEquals(new int[]{13, 14, 25, 33, 82, 94}, arr);
+//        System.out.println(Arrays.toString(arr));
     }
 
 }

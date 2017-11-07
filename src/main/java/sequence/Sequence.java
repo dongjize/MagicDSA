@@ -4,7 +4,7 @@ import base.Position;
 import list.List;
 import vector.Vector;
 
-/*
+/**
  * Description: 序列接口，同时支持向量Vector和列表List的所有方法
  *
  * Sequence即依次排列的多个对象

@@ -2,7 +2,7 @@ package linkedList;
 
 import base.Position;
 
-/*
+/**
  * Description: Double-ended Linked List Node
  *
  * @Author: dong

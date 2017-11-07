@@ -3,7 +3,7 @@ package graph;
 import base.Iterator;
 import base.Position;
 
-/*
+/**
  * Description:
  * ===== Vertex Interface of a Graph =====
  *

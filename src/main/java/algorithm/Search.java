@@ -1,6 +1,6 @@
 package algorithm;
 
-/*
+/**
  * Description: A set of searching algorithms
  *
  * @Author: dong

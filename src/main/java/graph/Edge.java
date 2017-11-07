@@ -2,7 +2,7 @@ package graph;
 
 import base.Position;
 
-/*
+/**
  * Description:
  * ===== Edge Interface of a Graph =====
  *

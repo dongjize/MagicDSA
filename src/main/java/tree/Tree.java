@@ -1,6 +1,6 @@
 package tree;
 
-/*
+/**
  * Description: Tree interface
  *
  * The number of tree node equals the number of tree edge plus 1

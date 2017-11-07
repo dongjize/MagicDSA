@@ -6,7 +6,7 @@ import base.Position;
 import list.DLNodeList;
 import list.List;
 
-/*
+/**
  * Description: Vertex implemented based on edge adjacency list
  *
  * @Author: dong

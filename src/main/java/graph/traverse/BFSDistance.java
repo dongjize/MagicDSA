@@ -3,7 +3,7 @@ package graph.traverse;
 import graph.Graph;
 import graph.Vertex;
 
-/*
+/**
  * Description: 
  *
  * @Author: dong

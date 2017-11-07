@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.HashMap;
 
-/*
+/**
  * Description: 字符串匹配
  *
  * @Author: dong

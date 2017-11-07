@@ -11,7 +11,7 @@ import priorityQueue.Entry;
 import tree.binTree.BinTreePosition;
 import tree.binTree.LinkedListBinTree;
 
-/*
+/**
  * Description:
  * 基于链表式BST实现的词典结构
  * 基于BinTree进行扩充

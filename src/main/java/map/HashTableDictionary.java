@@ -6,7 +6,7 @@ import list.ElementIterator;
 import list.List;
 import priorityQueue.Entry;
 
-/*
+/**
  * Description: 基于散列表实现的（无序）词典结构，采用分离链策略解决冲突
  *
  * @Author: dong

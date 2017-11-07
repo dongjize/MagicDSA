@@ -7,7 +7,7 @@ import graph.Vertex;
 import queue.ListQueue;
 import queue.Queue;
 
-/*
+/**
  * Description:
  *
  * 算法：BFS(G, s)

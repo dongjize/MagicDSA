@@ -2,7 +2,7 @@ package queue.deque;
 
 import linkedList.DLNode;
 
-/*
+/**
  * Description: Deque implemented by double-ended LinkedList
  *
  * @Author: dong

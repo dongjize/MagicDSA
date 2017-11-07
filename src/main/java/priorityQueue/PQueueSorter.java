@@ -4,7 +4,7 @@ import base.Sorter;
 import sequence.DLNodeSequence;
 import sequence.Sequence;
 
-/*
+/**
  * Description: 基于优先队列的排序器
  *
  * @Author: dong

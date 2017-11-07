@@ -5,7 +5,7 @@ import base.Position;
 import list.DLNodeList;
 import list.List;
 
-/*
+/**
  * Description: Graph implemented based on adjacency list.
  *
  * @Author: dong

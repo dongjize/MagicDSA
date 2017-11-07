@@ -1,6 +1,6 @@
 package queue.deque;
 
-/*
+/**
  * Description: 
  *
  * @Author: dong

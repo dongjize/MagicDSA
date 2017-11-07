@@ -3,7 +3,7 @@ package tree.complBinTree;
 import tree.binTree.BinTree;
 import tree.binTree.BinTreePosition;
 
-/*
+/**
  * Description: 完全二叉树接口
  *
  * 在完全二叉树中，

@@ -3,7 +3,7 @@ package graph;
 import base.Iterator;
 import base.Position;
 
-/*
+/**
  * Description:
  * ===== Directed Graph Interface =====
  * Undirected graphs can also be regarded as directed, if only replaceAt each undirected edge

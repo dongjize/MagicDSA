@@ -5,7 +5,7 @@ import list.DLNodeList;
 import list.List;
 import queue.ListQueue;
 
-/*
+/**
  * Description: Binary tree node implemented by linked list
  *
  * @Author: dong

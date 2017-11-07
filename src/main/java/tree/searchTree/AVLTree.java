@@ -5,7 +5,7 @@ import priorityQueue.Comparator;
 import priorityQueue.Entry;
 import tree.binTree.BinTreePosition;
 
-/*
+/**
  * Description: AVL Tree
  *
  * @Author: dong

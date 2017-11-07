@@ -3,7 +3,7 @@ package list;
 import base.Iterator;
 import base.Position;
 
-/*
+/**
  * Description: List Interface
  *
  * @Author: dong

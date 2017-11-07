@@ -9,7 +9,7 @@ import list.List;
 import priorityQueue.DefaultEntry;
 import priorityQueue.Entry;
 
-/*
+/**
  * Description: 
  *
  * @Author: dong

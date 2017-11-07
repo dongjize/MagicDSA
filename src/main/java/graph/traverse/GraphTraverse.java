@@ -5,7 +5,7 @@ import graph.Edge;
 import graph.Graph;
 import graph.Vertex;
 
-/*
+/**
  * Description: 图遍历父类
  *
  * @Author: dong

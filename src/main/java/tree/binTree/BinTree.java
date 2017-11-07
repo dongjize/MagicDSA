@@ -2,7 +2,7 @@ package tree.binTree;
 
 import base.Iterator;
 
-/*
+/**
  * Description: Binary Tree interface
  *
  * @Author: dong

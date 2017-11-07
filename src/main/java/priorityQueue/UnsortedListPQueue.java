@@ -6,7 +6,7 @@ import list.DLNodeList;
 import list.List;
 import sequence.Sequence;
 
-/*
+/**
  * Description: 基于无序列表实现的优先队列
  *
  * @Author: dong

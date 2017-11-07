@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.Arrays;
 
-/*
+/**
  * Description: A set of sorting algorithms
  * - CountingSort
  * - BubbleSort

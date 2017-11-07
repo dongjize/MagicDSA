@@ -5,7 +5,7 @@ import graph.Vertex;
 import stack.ArrayStack;
 import stack.Stack;
 
-/*
+/**
  * Description: 有向图基于DFS模板的可达分量算法
  *
  * @Author: dong

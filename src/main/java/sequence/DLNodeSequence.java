@@ -4,7 +4,7 @@ import base.Position;
 import linkedList.DLNode;
 import list.DLNodeList;
 
-/*
+/**
  * Description: 基于双向链表实现序列
  *
  * @Author: dong

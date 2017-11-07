@@ -5,7 +5,7 @@ import graph.Edge;
 import graph.Graph;
 import graph.Vertex;
 
-/*
+/**
  * Description: 有向带权图最佳优先遍历
  *
  *

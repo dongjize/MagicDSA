@@ -1,6 +1,6 @@
 package priorityQueue;
 
-/*
+/**
  * Description: 条目Entry接口
  *
  * @Author: dong

@@ -1,6 +1,6 @@
 package vector;
 
-/*
+/**
  * Description: vector.Vector implemented by array. Fixed size depending on the array's size. No good.
  *
  * @Author: dong

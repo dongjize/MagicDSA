@@ -1,6 +1,6 @@
 package queue;
 
-/*
+/**
  * Description: 
  *
  * @Author: dong

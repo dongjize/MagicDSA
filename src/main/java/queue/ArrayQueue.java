@@ -1,6 +1,6 @@
 package queue;
 
-/*
+/**
  * Description:
  *
  * f：始终等于 Q 的首元素在数组中的下标，即指向下次出队元素的位置

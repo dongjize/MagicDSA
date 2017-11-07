@@ -1,6 +1,6 @@
 package map;
 
-/*
+/**
  * Description: 判等器接口
  *
  * @Author: dong

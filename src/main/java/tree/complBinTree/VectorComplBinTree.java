@@ -6,7 +6,7 @@ import tree.binTree.LinkedListBinTree;
 import vector.ExtensibleArrayVector;
 import vector.Vector;
 
-/*
+/**
  * Description: Complete Binary Tree implemented by Vector
  *
  * @Author: dong

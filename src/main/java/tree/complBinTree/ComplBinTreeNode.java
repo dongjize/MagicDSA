@@ -4,7 +4,7 @@ import tree.binTree.BinTreeNode;
 import tree.binTree.BinTreePosition;
 import vector.Vector;
 
-/*
+/**
  * Description: 基于秩(Rank)实现的完全二叉树节点
  *
  * @Author: dong

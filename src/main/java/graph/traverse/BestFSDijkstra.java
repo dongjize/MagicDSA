@@ -5,7 +5,7 @@ import graph.Edge;
 import graph.Graph;
 import graph.Vertex;
 
-/*
+/**
  * Description:（有向）带权图的单源点最短路径算法
  *
  * @Author: dong

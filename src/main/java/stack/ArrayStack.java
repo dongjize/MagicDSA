@@ -1,6 +1,6 @@
 package stack;
 
-/*
+/**
  * Description: Stack implemented by array.
  *
  * Drawback -- Capacity is initialized statically.

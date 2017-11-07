@@ -1,6 +1,6 @@
 package tree;
 
-/*
+/**
  * Description: Tree implemented by linked list
  *
  * @Author: dong

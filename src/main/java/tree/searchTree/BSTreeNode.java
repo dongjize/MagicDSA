@@ -4,7 +4,7 @@ import priorityQueue.Entry;
 import tree.binTree.BinTreeNode;
 import tree.binTree.BinTreePosition;
 
-/*
+/**
  * Description: 基于链表实现的BST节点类
  *
  * @Author: dong

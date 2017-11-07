@@ -5,7 +5,7 @@ import list.DLNodeList;
 import list.List;
 import sequence.Sequence;
 
-/*
+/**
  * Description: 基于有序列表的优先队列
  *
  * @Author: dong

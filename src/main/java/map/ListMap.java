@@ -8,7 +8,7 @@ import list.List;
 import priorityQueue.DefaultEntry;
 import priorityQueue.Entry;
 
-/*
+/**
  * Description: Map implemented based on DLNodeList
  *
  * 实现虽然简单，但效率不高。为了执行其中的 get(key)、put(key, value)或 remove(key)方法，

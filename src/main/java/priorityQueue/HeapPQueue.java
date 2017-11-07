@@ -6,7 +6,7 @@ import tree.complBinTree.ComplBinTreeNode;
 import tree.complBinTree.CompleteBinTree;
 import tree.complBinTree.VectorComplBinTree;
 
-/*
+/**
  * Description: 利用堆实现优先队列
  *
  * @Author: dong

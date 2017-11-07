@@ -5,7 +5,7 @@ import base.Iterator;
 import base.Position;
 import linkedList.DLNode;
 
-/*
+/**
  * Description: List implemented by deque
  *
  * @Author: dong

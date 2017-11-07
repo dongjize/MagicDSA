@@ -2,7 +2,7 @@ package queue;
 
 import linkedList.ListNode;
 
-/*
+/**
  * Description: Queue implemented based on LinkedList
  *
  * @Author: dong

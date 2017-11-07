@@ -2,7 +2,7 @@ package stack;
 
 import linkedList.ListNode;
 
-/*
+/**
  * Description: Stack implemented based on list.LinkedList
  *
  * @Author: dong

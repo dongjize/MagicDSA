@@ -1,6 +1,6 @@
 package vector;
 
-/*
+/**
  * Description:
  * Vector implemented by an extensible array, which possesses a fixed length array,
  * but can be extended if inserting an excessive number of elements by constantly doubling

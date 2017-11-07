@@ -2,7 +2,7 @@ package base;
 
 import sequence.Sequence;
 
-/*
+/**
  * Description: 
  *
  * @Author: dong

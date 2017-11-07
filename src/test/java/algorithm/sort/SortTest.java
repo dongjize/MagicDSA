@@ -4,6 +4,8 @@ import algorithm.Sort;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 public class SortTest {
 
     @Test
@@ -25,6 +27,13 @@ public class SortTest {
         Sort.quickSort(arr, 0, arr.length - 1);
         Assert.assertArrayEquals(new int[]{13, 14, 25, 33, 82, 94}, arr);
 //        System.out.println(Arrays.toString(arr));
+    }
+
+    @Test
+    public void testShellSort() {
+        int[] arr = {1, 4, 7, 1, 5, 5, 3, 85, 34, 75, 23, 75, 2, 0};
+        Sort.shellSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
 }
